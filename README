@@ -1,0 +1,32 @@
+# gzip64
+
+Compress with Gzip and encode in base 64 for easy web transfer
+
+## Usage
+
+Add [org.clojars.frozenlock/gzip64 "1.0.0-SNAPSHOT"] in your project dependencies.
+
+(use 'gzip64.core)
+
+(gz64 "asdf asdf asdf asdf asdf asdf asdf asdf asdf asdf")
+
+-> "H4sIAAAAAAAAAEssTklTSCSBAAC000TuMQAAAA=="
+
+(gunz64 "H4sIAAAAAAAAAEssTklTSCSBAAC000TuMQAAAA==")
+
+-> "asdf asdf asdf asdf asdf asdf asdf asdf asdf asdf"
+
+Of course, the advantage can't be seen in such a small string because
+of the compression overhead.
+
+Let's look at a slightly longer string:
+
+(gz64 "asdf asdf asdf asdf asdf asdf asdf asdf asdf asdf asdf asdf asdf asdf asdf asdf asdf asdf asdf asdf asdf asdf asdf asdf asdf asdf asdf asdf asdf asdf asdf asdf asdf asdf asdf asdf asdf asdf asdf asdf asdf asdf asdf asdf asdf asdf asdf asdf asdf asdf")
+
+-> "H4sIAAAAAAAAAEssTklTSByBBACDkiiB+QAAAA=="
+
+## License
+
+Copyright (C) 2012 Frozenlock
+
+Distributed under the Eclipse Public License, the same as Clojure.
