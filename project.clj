@@ -1,4 +1,4 @@
-(defproject org.clojars.frozenlock/gzip64 "1.0.0-SNAPSHOT"
+(defproject org.clojars.frozenlock/gzip64 "1.0.0"
   :description "Gzip and encode in base 64 for easy web transfer"
   :url "https://github.com/Frozenlock/gzip64"
   :dependencies [[org.clojure/clojure "1.3.0"]

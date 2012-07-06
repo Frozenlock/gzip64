@@ -4,7 +4,7 @@ Compress with Gzip and encode in base 64 for easy web transfer
 
 ## Usage
 
-Add [org.clojars.frozenlock/gzip64 "1.0.0-SNAPSHOT"] in your project dependencies.
+Add [org.clojars.frozenlock/gzip64 "1.0.0"] in your project dependencies.
 
 (use 'gzip64.core)
 
